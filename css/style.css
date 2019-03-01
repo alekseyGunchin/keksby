@@ -41,7 +41,7 @@ body {
 }
 
 .btn:active{
-  color: rgba(141, 116, 90, .3)
+  color: rgba(141, 116, 90, .3);
   border-color: #8d745a;
 }
 
@@ -456,15 +456,39 @@ body {
   padding-bottom: 70px;
 }
 
+.feedback .container{
+  position: relative;
+}
+
 .feedback-tip{
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 500px;
   font-size: 16px;
 }
 
+.feedback .section-title{
+  max-width: 500px;
+}
+
 .feedback-form-group {
-  padding: 10px 0;
+  margin-bottom: 15px;
+}
+
+.feedback-form-group-left-part{
+  float: left;
+  width: 290px;
+}
+
+.feedback-form-group-right-part{
+  float: right;
+  width: 290px;
 }
 
 .feedback-form-group label {
+  display: inline-block;
+  padding: 5px 0 5px 17px;
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -472,9 +496,13 @@ body {
 .feedback-form input[type="text"],
 .feedback-form select,
 .feedback-form textarea {
-    font: inherit;
-    color: inherit;
-    border: 2px solid #d5d5d5;
+  width: 100%;
+  padding: 9px 15px;
+  height: 54px;
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+  border: 2px solid #d5d5d5;
 }
 
 .feedback-form{
@@ -488,17 +516,43 @@ body {
 .feedback-form input[type="text"]:hover,
 .feedback-form select:hover,
 .feedback-form textarea:hover {
-    border-color: #bebebe;
+  border-color: #bebebe;
 }
 
 .feedback-form input[type="text"]:focus,
 .feedback-form select:focus,
 .feedback-form textarea:focus {
-    border-color: #8d745a;
+  border-color: #8d745a;
+}
+
+.feedback-form textarea{
+  display: block;
+  min-height: 120px;
+}
+
+.feedback-form .btn{
+  margin-top: 40px;
+  background-color: #a38b70;
+  color: #fff;
+}
+
+.feedback-form .btn:hover{
+  background-color: #8d745a;
+}
+
+.feedback-form .btn:active{
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .checkbox-area{
   border-bottom: 1px solid #d5d5d5;
+  margin-bottom: 25px;
+  padding: 25px 0 25px 17px; 
+}
+
+.checkbox-area input[type="checkbox"]{
+  margin: 0;
+  margin-right: 5px;
 }
 
 .page-footer {
@@ -527,6 +581,8 @@ body {
 }
 
 .footer-menu h3{
+  margin: 0;
+  margin-bottom: 20px;
   font-family: "Georgia", serif;
   font-size: 24px;
   font-weight: bold;
@@ -540,7 +596,13 @@ body {
 }
 
 .footer-menu ul{
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.footer-menu ul li{
+  margin-bottom: 15px;
 }
 
 .footer-menu a{
@@ -563,12 +625,19 @@ body {
   height: 55px;
 }
 
+.footer-logo img{
+  width: 205px;
+  height: 55px;
+}
+
 .footer-social{
+  font-size: 0;
   float: left;
   width: 490px;
 }
 
 .footer-social b{
+  margin-right: 40px;
   font-family: "Georgia", serif;
   font-size: 24px;
   color: #a38b70;
@@ -576,11 +645,40 @@ body {
 
 .social-btn{
   color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  background: url(../img/sprite.png) no-repeat;
+}
+
+.social-btn-vk{
+  background-position: 16px -238px;
+}
+
+.social-btn-fb{
+  background-position: 19px -297px;
+}
+
+.social-btn-in{
+  background-position: 13px -358px;
+}
+
+.social-btn:hover{
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.social-btn:active{
+  border-color: #ffffff;
+  opacity: 0.1;
 }
 
 .footer-copyright{
   float: right;
   width: 236px;
+  margin-top: 17px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -596,4 +694,14 @@ body {
 
 .footer-copyright a:active{
   color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-copyright .heart{
+  display: inline-block;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -5px -419px;
+  width: 27px;
+  height: 24px;
+  font-size: 0;
+  vertical-align: middle;
 }
