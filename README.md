@@ -1,3 +1,3 @@
 ### Помогаем Кексу запустить магазин кошачьих аксессуаров и фэшена.
 ***
-[ДЕМО](https://allks.github.io/keksby/)
+[ДЕМО](https://allks.github.io/ha-keksby/)
